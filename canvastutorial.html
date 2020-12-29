@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Canvas</title>
+		<meta charset="utf-8">
+	</head>
+	<body bgcolor="SkyBlue">
+		<canvas id="canvas" width="400" height="400"></canvas>
+
+		<script>
+			var canvas = document.getElementById("canvas");
+			var ctx = canvas.getContext("2d");
+			// head
+			ctx.fillRect (50, 0, 50, 50);
+			//neck
+		for (var i = 0; i < 3; i++) {
+			ctx.fillRect (70, 50, 10, i * 10);
+		}
+			//heads
+			for (var i = 0; i < 15; i++) {
+			ctx.fillRect (5, 70, i * 10, 10);
+		}
+			//body
+			ctx.fillRect (40, 80, 70, 70);
+			//left leg
+			for (var i = 0; i < 6; i++) {
+				ctx.fillRect (40, 150, 10, i * 10);
+			}
+			//rigth leg
+			for (var i = 0; i < 6; i++) {
+				ctx.fillRect (100, 150, 10, i * 10);
+			}
+
+
+			ctx.fillStyle = "Red";
+			for (var i = 0; i < 30; i++) {
+				ctx.fillRect (150, 0, 20, i * 10);
+			}
+
+			ctx.fillStyle = "Aqua";
+			for (var i = 0; i < 30; i++) {
+				ctx.fillRect (170, 0, 20, i * 10);
+			}
+
+			ctx.fillStyle = "Grey";
+			for (var i = 0; i < 30; i++) {
+				ctx.fillRect (190, 0, 20, i * 10);
+			}
+
+			ctx.fillStyle = "LightYellow";
+			for (var i = 0; i < 30; i++) {
+				ctx.fillRect (210, 0, 20, i * 10);
+			}
+			
+			ctx.fillStyle = "LightSalmon";
+			for (var i = 0; i < 30; i++) {
+				ctx.fillRect (230, 0, 20, i * 10);
+			}
+
+			ctx.fillStyle = "White";
+			for (var i = 0; i < 10; i++) {
+				ctx.fillRect (250, 0, i * 20, 20);
+			}
+
+			ctx.fillStyle = "Black";
+			for (var i = 0; i < 10; i++) {
+				ctx.fillRect (250, 20, i * 20, 20);
+			}
+
+			ctx.fillStyle = "Green";
+			for (var i = 0; i < 10; i++) {
+				ctx.fillRect (250, 40, i * 20, 20);
+			}
+
+			ctx.fillStyle = "Olive";
+			for (var i = 0; i < 10; i++) {
+				ctx.fillRect (250, 60, i * 20, 20);
+			}
+
+			ctx.fillStyle = "Pink";
+			for (var i = 0; i < 10; i++) {
+				ctx.fillRect (250, 80, i * 20, 20);
+			}
+	</script>
+</body>
+</html>
